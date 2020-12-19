@@ -8,5 +8,9 @@ target 'LoginTemplate' do
   # Pods for LoginTemplate
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  
+  target 'LoginTemplateTests' do
+    inherit! :search_paths
+  end
 
 end

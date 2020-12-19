@@ -3,34 +3,91 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ED36641AB3608EE32A55365 /* Pods_LoginTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6CC9A5FE647224AAC9191D /* Pods_LoginTemplateTests.framework */; };
+		79125D652588CC2700D690A2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D642588CC2700D690A2 /* AuthService.swift */; };
+		79125D6B2588D2B400D690A2 /* LoginTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D6A2588D2B400D690A2 /* LoginTypes.swift */; };
+		79125D6F2588D30F00D690A2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D6E2588D30F00D690A2 /* AuthManager.swift */; };
+		79125D752588EAF600D690A2 /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D742588EAF600D690A2 /* AppSettingsManager.swift */; };
+		79125D822588F13000D690A2 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79125D812588F13000D690A2 /* LoginView.xib */; };
+		79125D852588F14400D690A2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D842588F14400D690A2 /* LoginView.swift */; };
+		79125D882588F2D100D690A2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D872588F2D100D690A2 /* Utils.swift */; };
+		79125D8B2588F35700D690A2 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D8A2588F35700D690A2 /* RootAssembly.swift */; };
+		79125D8F2588F37E00D690A2 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D8E2588F37E00D690A2 /* ServiceAssembly.swift */; };
+		79125D972588F3C700D690A2 /* PresentationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D962588F3C700D690A2 /* PresentationAssembly.swift */; };
+		79125D9C2588F51700D690A2 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D9B2588F51700D690A2 /* CoreAssembly.swift */; };
+		79125DA1258A61C300D690A2 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D9F258A61C300D690A2 /* EmailViewController.swift */; };
+		79125DAA258A640800D690A2 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125DA9258A640800D690A2 /* EmailView.swift */; };
+		79125DD7258DF82100D690A2 /* EmailCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125DD6258DF82100D690A2 /* EmailCredentials.swift */; };
+		79125DDD258E00A400D690A2 /* EmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79125DDC258E00A400D690A2 /* EmailView.xib */; };
+		79125DE4258E10B900D690A2 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125DE3258E10B900D690A2 /* EmailViewModel.swift */; };
+		79125DED258E23BE00D690A2 /* LoginTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125DEC258E23BE00D690A2 /* LoginTemplateTests.swift */; };
 		799FA0502588A74C00E2B235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA04F2588A74C00E2B235 /* AppDelegate.swift */; };
-		799FA0542588A74C00E2B235 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA0532588A74C00E2B235 /* ViewController.swift */; };
-		799FA0572588A74C00E2B235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799FA0552588A74C00E2B235 /* Main.storyboard */; };
+		799FA0542588A74C00E2B235 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA0532588A74C00E2B235 /* LoginViewController.swift */; };
 		799FA0592588A74F00E2B235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799FA0582588A74F00E2B235 /* Assets.xcassets */; };
 		799FA05C2588A74F00E2B235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799FA05A2588A74F00E2B235 /* LaunchScreen.storyboard */; };
 		799FA0652588A7BF00E2B235 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 799FA0642588A7BF00E2B235 /* GoogleService-Info.plist */; };
 		CE834417AE5112ED15326650 /* Pods_LoginTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8167251599DEADD48C91EEF9 /* Pods_LoginTemplate.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		79125DEF258E23BE00D690A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799FA0442588A74C00E2B235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799FA04B2588A74C00E2B235;
+			remoteInfo = LoginTemplate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		38B986470B885CEED8DFC58F /* Pods-LoginTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplate.release.xcconfig"; path = "Target Support Files/Pods-LoginTemplate/Pods-LoginTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		74D1240A6433CE13934E085D /* Pods-LoginTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplateTests.release.xcconfig"; path = "Target Support Files/Pods-LoginTemplateTests/Pods-LoginTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		79125D622588CA9100D690A2 /* LoginTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoginTemplate.entitlements; sourceTree = "<group>"; };
+		79125D642588CC2700D690A2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		79125D6A2588D2B400D690A2 /* LoginTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypes.swift; sourceTree = "<group>"; };
+		79125D6E2588D30F00D690A2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		79125D742588EAF600D690A2 /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
+		79125D812588F13000D690A2 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		79125D842588F14400D690A2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		79125D872588F2D100D690A2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		79125D8A2588F35700D690A2 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		79125D8E2588F37E00D690A2 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		79125D962588F3C700D690A2 /* PresentationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationAssembly.swift; sourceTree = "<group>"; };
+		79125D9B2588F51700D690A2 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		79125D9F258A61C300D690A2 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		79125DA9258A640800D690A2 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		79125DD6258DF82100D690A2 /* EmailCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCredentials.swift; sourceTree = "<group>"; };
+		79125DDC258E00A400D690A2 /* EmailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailView.xib; sourceTree = "<group>"; };
+		79125DE3258E10B900D690A2 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		79125DEA258E23BE00D690A2 /* LoginTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79125DEC258E23BE00D690A2 /* LoginTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTemplateTests.swift; sourceTree = "<group>"; };
+		79125DEE258E23BE00D690A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		799FA04C2588A74C00E2B235 /* LoginTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799FA04F2588A74C00E2B235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		799FA0532588A74C00E2B235 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		799FA0562588A74C00E2B235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		799FA0532588A74C00E2B235 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		799FA0582588A74F00E2B235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799FA05B2588A74F00E2B235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		799FA05D2588A74F00E2B235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		799FA0642588A7BF00E2B235 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8167251599DEADD48C91EEF9 /* Pods_LoginTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FD11B306D8E5A42FE1D543 /* Pods-LoginTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-LoginTemplateTests/Pods-LoginTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC6CC9A5FE647224AAC9191D /* Pods_LoginTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83CF0E835FB7CDE36796959 /* Pods-LoginTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplate.debug.xcconfig"; path = "Target Support Files/Pods-LoginTemplate/Pods-LoginTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		79125DE7258E23BE00D690A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED36641AB3608EE32A55365 /* Pods_LoginTemplateTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		799FA0492588A74C00E2B235 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,15 +104,114 @@
 			children = (
 				F83CF0E835FB7CDE36796959 /* Pods-LoginTemplate.debug.xcconfig */,
 				38B986470B885CEED8DFC58F /* Pods-LoginTemplate.release.xcconfig */,
+				E0FD11B306D8E5A42FE1D543 /* Pods-LoginTemplateTests.debug.xcconfig */,
+				74D1240A6433CE13934E085D /* Pods-LoginTemplateTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		79125D772588EF7D00D690A2 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				79125D9B2588F51700D690A2 /* CoreAssembly.swift */,
+				79125D6E2588D30F00D690A2 /* AuthManager.swift */,
+				79125D742588EAF600D690A2 /* AppSettingsManager.swift */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		79125D782588EF8F00D690A2 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				79125D922588F38700D690A2 /* ServiceAssembly */,
+				79125D8D2588F36000D690A2 /* Services */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		79125D7D2588F06500D690A2 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				79125D992588F42700D690A2 /* PresentationAssembly */,
+				79125D942588F3A900D690A2 /* LoginViewController */,
+				79125DA4258A61CB00D690A2 /* EmailViewController */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		79125D7F2588F0A500D690A2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				799FA0582588A74F00E2B235 /* Assets.xcassets */,
+				799FA05A2588A74F00E2B235 /* LaunchScreen.storyboard */,
+				799FA05D2588A74F00E2B235 /* Info.plist */,
+				799FA0642588A7BF00E2B235 /* GoogleService-Info.plist */,
+				79125D622588CA9100D690A2 /* LoginTemplate.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		79125D8D2588F36000D690A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				79125D6A2588D2B400D690A2 /* LoginTypes.swift */,
+				79125D642588CC2700D690A2 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		79125D922588F38700D690A2 /* ServiceAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				79125D8E2588F37E00D690A2 /* ServiceAssembly.swift */,
+			);
+			path = ServiceAssembly;
+			sourceTree = "<group>";
+		};
+		79125D942588F3A900D690A2 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				799FA0532588A74C00E2B235 /* LoginViewController.swift */,
+				79125D842588F14400D690A2 /* LoginView.swift */,
+				79125D812588F13000D690A2 /* LoginView.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		79125D992588F42700D690A2 /* PresentationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				79125D962588F3C700D690A2 /* PresentationAssembly.swift */,
+			);
+			path = PresentationAssembly;
+			sourceTree = "<group>";
+		};
+		79125DA4258A61CB00D690A2 /* EmailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79125D9F258A61C300D690A2 /* EmailViewController.swift */,
+				79125DE3258E10B900D690A2 /* EmailViewModel.swift */,
+				79125DA9258A640800D690A2 /* EmailView.swift */,
+				79125DDC258E00A400D690A2 /* EmailView.xib */,
+				79125DD6258DF82100D690A2 /* EmailCredentials.swift */,
+			);
+			path = EmailViewController;
+			sourceTree = "<group>";
+		};
+		79125DEB258E23BE00D690A2 /* LoginTemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				79125DEC258E23BE00D690A2 /* LoginTemplateTests.swift */,
+				79125DEE258E23BE00D690A2 /* Info.plist */,
+			);
+			path = LoginTemplateTests;
 			sourceTree = "<group>";
 		};
 		799FA0432588A74C00E2B235 = {
 			isa = PBXGroup;
 			children = (
 				799FA04E2588A74C00E2B235 /* LoginTemplate */,
+				79125DEB258E23BE00D690A2 /* LoginTemplateTests */,
 				799FA04D2588A74C00E2B235 /* Products */,
 				4B3C7AFA4FA01D451D25015A /* Pods */,
 				94005389ACC488978C28B14B /* Frameworks */,
@@ -66,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				799FA04C2588A74C00E2B235 /* LoginTemplate.app */,
+				79125DEA258E23BE00D690A2 /* LoginTemplateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,12 +231,12 @@
 			isa = PBXGroup;
 			children = (
 				799FA04F2588A74C00E2B235 /* AppDelegate.swift */,
-				799FA0532588A74C00E2B235 /* ViewController.swift */,
-				799FA0552588A74C00E2B235 /* Main.storyboard */,
-				799FA0582588A74F00E2B235 /* Assets.xcassets */,
-				799FA05A2588A74F00E2B235 /* LaunchScreen.storyboard */,
-				799FA05D2588A74F00E2B235 /* Info.plist */,
-				799FA0642588A7BF00E2B235 /* GoogleService-Info.plist */,
+				79125D8A2588F35700D690A2 /* RootAssembly.swift */,
+				79125D7D2588F06500D690A2 /* PresentationLayer */,
+				79125D782588EF8F00D690A2 /* ServiceLayer */,
+				79125D772588EF7D00D690A2 /* CoreLayer */,
+				79125D7F2588F0A500D690A2 /* SupportingFiles */,
+				79125D872588F2D100D690A2 /* Utils.swift */,
 			);
 			path = LoginTemplate;
 			sourceTree = "<group>";
@@ -88,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				8167251599DEADD48C91EEF9 /* Pods_LoginTemplate.framework */,
+				EC6CC9A5FE647224AAC9191D /* Pods_LoginTemplateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +253,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		79125DE9258E23BE00D690A2 /* LoginTemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79125DF1258E23BE00D690A2 /* Build configuration list for PBXNativeTarget "LoginTemplateTests" */;
+			buildPhases = (
+				BFAC5850D1B7DC2CDFAB383F /* [CP] Check Pods Manifest.lock */,
+				79125DE6258E23BE00D690A2 /* Sources */,
+				79125DE7258E23BE00D690A2 /* Frameworks */,
+				79125DE8258E23BE00D690A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79125DF0258E23BE00D690A2 /* PBXTargetDependency */,
+			);
+			name = LoginTemplateTests;
+			productName = LoginTemplateTests;
+			productReference = 79125DEA258E23BE00D690A2 /* LoginTemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		799FA04B2588A74C00E2B235 /* LoginTemplate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 799FA0602588A74F00E2B235 /* Build configuration list for PBXNativeTarget "LoginTemplate" */;
@@ -120,9 +297,13 @@
 		799FA0442588A74C00E2B235 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					79125DE9258E23BE00D690A2 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 799FA04B2588A74C00E2B235;
+					};
 					799FA04B2588A74C00E2B235 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -142,19 +323,28 @@
 			projectRoot = "";
 			targets = (
 				799FA04B2588A74C00E2B235 /* LoginTemplate */,
+				79125DE9258E23BE00D690A2 /* LoginTemplateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		79125DE8258E23BE00D690A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		799FA04A2588A74C00E2B235 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79125DDD258E00A400D690A2 /* EmailView.xib in Resources */,
 				799FA05C2588A74F00E2B235 /* LaunchScreen.storyboard in Resources */,
 				799FA0652588A7BF00E2B235 /* GoogleService-Info.plist in Resources */,
 				799FA0592588A74F00E2B235 /* Assets.xcassets in Resources */,
-				799FA0572588A74C00E2B235 /* Main.storyboard in Resources */,
+				79125D822588F13000D690A2 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,29 +390,73 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginTemplate/Pods-LoginTemplate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BFAC5850D1B7DC2CDFAB383F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginTemplateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		79125DE6258E23BE00D690A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79125DED258E23BE00D690A2 /* LoginTemplateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		799FA0482588A74C00E2B235 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				799FA0542588A74C00E2B235 /* ViewController.swift in Sources */,
+				79125D652588CC2700D690A2 /* AuthService.swift in Sources */,
+				79125D852588F14400D690A2 /* LoginView.swift in Sources */,
+				799FA0542588A74C00E2B235 /* LoginViewController.swift in Sources */,
+				79125DE4258E10B900D690A2 /* EmailViewModel.swift in Sources */,
+				79125DAA258A640800D690A2 /* EmailView.swift in Sources */,
+				79125D972588F3C700D690A2 /* PresentationAssembly.swift in Sources */,
+				79125D752588EAF600D690A2 /* AppSettingsManager.swift in Sources */,
+				79125D8B2588F35700D690A2 /* RootAssembly.swift in Sources */,
+				79125DA1258A61C300D690A2 /* EmailViewController.swift in Sources */,
+				79125D9C2588F51700D690A2 /* CoreAssembly.swift in Sources */,
+				79125D8F2588F37E00D690A2 /* ServiceAssembly.swift in Sources */,
+				79125DD7258DF82100D690A2 /* EmailCredentials.swift in Sources */,
+				79125D6B2588D2B400D690A2 /* LoginTypes.swift in Sources */,
 				799FA0502588A74C00E2B235 /* AppDelegate.swift in Sources */,
+				79125D6F2588D30F00D690A2 /* AuthManager.swift in Sources */,
+				79125D882588F2D100D690A2 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		799FA0552588A74C00E2B235 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				799FA0562588A74C00E2B235 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		79125DF0258E23BE00D690A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799FA04B2588A74C00E2B235 /* LoginTemplate */;
+			targetProxy = 79125DEF258E23BE00D690A2 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		799FA05A2588A74F00E2B235 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -234,6 +468,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		79125DF2258E23BE00D690A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FD11B306D8E5A42FE1D543 /* Pods-LoginTemplateTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS98LAJM2;
+				HEADER_SEARCH_PATHS = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+				);
+				INFOPLIST_FILE = LoginTemplateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StasAtskiy.LoginTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginTemplate.app/LoginTemplate";
+			};
+			name = Debug;
+		};
+		79125DF3258E23BE00D690A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D1240A6433CE13934E085D /* Pods-LoginTemplateTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BS98LAJM2;
+				HEADER_SEARCH_PATHS = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+				);
+				INFOPLIST_FILE = LoginTemplateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StasAtskiy.LoginTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginTemplate.app/LoginTemplate";
+			};
+			name = Release;
+		};
 		799FA05E2588A74F00E2B235 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,9 +644,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginTemplate/LoginTemplate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BS98LAJM2;
-				INFOPLIST_FILE = LoginTemplate/Info.plist;
+				INFOPLIST_FILE = LoginTemplate/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,9 +665,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoginTemplate/LoginTemplate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BS98LAJM2;
-				INFOPLIST_FILE = LoginTemplate/Info.plist;
+				INFOPLIST_FILE = LoginTemplate/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,6 +683,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		79125DF1258E23BE00D690A2 /* Build configuration list for PBXNativeTarget "LoginTemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79125DF2258E23BE00D690A2 /* Debug */,
+				79125DF3258E23BE00D690A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		799FA0472588A74C00E2B235 /* Build configuration list for PBXProject "LoginTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
