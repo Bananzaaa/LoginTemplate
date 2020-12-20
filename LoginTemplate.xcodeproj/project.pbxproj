@@ -12,7 +12,6 @@
 		79125D6B2588D2B400D690A2 /* LoginTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D6A2588D2B400D690A2 /* LoginTypes.swift */; };
 		79125D6F2588D30F00D690A2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D6E2588D30F00D690A2 /* AuthManager.swift */; };
 		79125D752588EAF600D690A2 /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D742588EAF600D690A2 /* AppSettingsManager.swift */; };
-		79125D822588F13000D690A2 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79125D812588F13000D690A2 /* LoginView.xib */; };
 		79125D852588F14400D690A2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D842588F14400D690A2 /* LoginView.swift */; };
 		79125D882588F2D100D690A2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D872588F2D100D690A2 /* Utils.swift */; };
 		79125D8B2588F35700D690A2 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125D8A2588F35700D690A2 /* RootAssembly.swift */; };
@@ -25,6 +24,8 @@
 		79125DDD258E00A400D690A2 /* EmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79125DDC258E00A400D690A2 /* EmailView.xib */; };
 		79125DE4258E10B900D690A2 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125DE3258E10B900D690A2 /* EmailViewModel.swift */; };
 		79125DED258E23BE00D690A2 /* LoginTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125DEC258E23BE00D690A2 /* LoginTemplateTests.swift */; };
+		79125E3C258F521A00D690A2 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E3B258F521A00D690A2 /* DestinationViewController.swift */; };
+		79125E43258F523300D690A2 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E42258F523300D690A2 /* DestinationView.swift */; };
 		799FA0502588A74C00E2B235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA04F2588A74C00E2B235 /* AppDelegate.swift */; };
 		799FA0542588A74C00E2B235 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA0532588A74C00E2B235 /* LoginViewController.swift */; };
 		799FA0592588A74F00E2B235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799FA0582588A74F00E2B235 /* Assets.xcassets */; };
@@ -51,7 +52,6 @@
 		79125D6A2588D2B400D690A2 /* LoginTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypes.swift; sourceTree = "<group>"; };
 		79125D6E2588D30F00D690A2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		79125D742588EAF600D690A2 /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
-		79125D812588F13000D690A2 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		79125D842588F14400D690A2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		79125D872588F2D100D690A2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		79125D8A2588F35700D690A2 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
@@ -66,6 +66,9 @@
 		79125DEA258E23BE00D690A2 /* LoginTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79125DEC258E23BE00D690A2 /* LoginTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTemplateTests.swift; sourceTree = "<group>"; };
 		79125DEE258E23BE00D690A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79125E36258F4AF900D690A2 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		79125E3B258F521A00D690A2 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		79125E42258F523300D690A2 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		799FA04C2588A74C00E2B235 /* LoginTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799FA04F2588A74C00E2B235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		799FA0532588A74C00E2B235 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 				79125D992588F42700D690A2 /* PresentationAssembly */,
 				79125D942588F3A900D690A2 /* LoginViewController */,
 				79125DA4258A61CB00D690A2 /* EmailViewController */,
+				79125E3F258F522100D690A2 /* DestinationViewController */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -173,7 +177,6 @@
 			children = (
 				799FA0532588A74C00E2B235 /* LoginViewController.swift */,
 				79125D842588F14400D690A2 /* LoginView.swift */,
-				79125D812588F13000D690A2 /* LoginView.xib */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -207,9 +210,19 @@
 			path = LoginTemplateTests;
 			sourceTree = "<group>";
 		};
+		79125E3F258F522100D690A2 /* DestinationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79125E3B258F521A00D690A2 /* DestinationViewController.swift */,
+				79125E42258F523300D690A2 /* DestinationView.swift */,
+			);
+			path = DestinationViewController;
+			sourceTree = "<group>";
+		};
 		799FA0432588A74C00E2B235 = {
 			isa = PBXGroup;
 			children = (
+				79125E36258F4AF900D690A2 /* Config.xcconfig */,
 				799FA04E2588A74C00E2B235 /* LoginTemplate */,
 				79125DEB258E23BE00D690A2 /* LoginTemplateTests */,
 				799FA04D2588A74C00E2B235 /* Products */,
@@ -344,7 +357,6 @@
 				799FA05C2588A74F00E2B235 /* LaunchScreen.storyboard in Resources */,
 				799FA0652588A7BF00E2B235 /* GoogleService-Info.plist in Resources */,
 				799FA0592588A74F00E2B235 /* Assets.xcassets in Resources */,
-				79125D822588F13000D690A2 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,8 +448,10 @@
 				79125D752588EAF600D690A2 /* AppSettingsManager.swift in Sources */,
 				79125D8B2588F35700D690A2 /* RootAssembly.swift in Sources */,
 				79125DA1258A61C300D690A2 /* EmailViewController.swift in Sources */,
+				79125E43258F523300D690A2 /* DestinationView.swift in Sources */,
 				79125D9C2588F51700D690A2 /* CoreAssembly.swift in Sources */,
 				79125D8F2588F37E00D690A2 /* ServiceAssembly.swift in Sources */,
+				79125E3C258F521A00D690A2 /* DestinationViewController.swift in Sources */,
 				79125DD7258DF82100D690A2 /* EmailCredentials.swift in Sources */,
 				79125D6B2588D2B400D690A2 /* LoginTypes.swift in Sources */,
 				799FA0502588A74C00E2B235 /* AppDelegate.swift in Sources */,
@@ -478,7 +492,7 @@
 				HEADER_SEARCH_PATHS = (
 					HEADER_SEARCH_PATHS,
 					"=",
-					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = LoginTemplateTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -505,7 +519,7 @@
 				HEADER_SEARCH_PATHS = (
 					HEADER_SEARCH_PATHS,
 					"=",
-					"\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = LoginTemplateTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
@@ -524,6 +538,7 @@
 		};
 		799FA05E2588A74F00E2B235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79125E36258F4AF900D690A2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -585,6 +600,7 @@
 		};
 		799FA05F2588A74F00E2B235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79125E36258F4AF900D690A2 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

@@ -6,8 +6,9 @@ target 'LoginTemplate' do
   use_frameworks!
 
   # Pods for LoginTemplate
-  pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'FBSDKLoginKit'
+  pod 'SnapKit', '~> 5.0.0'
   
   target 'LoginTemplateTests' do
     inherit! :search_paths

@@ -10,6 +10,7 @@ import Foundation
 protocol IPresentationAssembly {
     func loginViewController() -> LoginViewController
     func emailViewController() -> EmailViewController
+    func destinationViewController() -> DestinationViewController
 }
 
 final class PresentationAssembly: IPresentationAssembly {
@@ -33,5 +34,11 @@ final class PresentationAssembly: IPresentationAssembly {
     
     private var emailViewControllerModel: IEmailViewModel {
         return EmailViewModel(authService: serviceAssembly.authService)
+    }
+    
+    // MARK: - DestinationViewController
+    
+    func destinationViewController() -> DestinationViewController {
+        return DestinationViewController()
     }
 }

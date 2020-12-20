@@ -11,8 +11,14 @@ class LoginViewController: UIViewController {
     
     // MARK: - UI
     
+//    private lazy var loginView: LoginView = {
+//        let loginView: LoginView = LoginView.loadFromNib()
+//        loginView.delegate = self
+//        return loginView
+//    }()
+    
     private lazy var loginView: LoginView = {
-        let loginView: LoginView = LoginView.loadFromNib()
+        let loginView = LoginView()
         loginView.delegate = self
         return loginView
     }()
@@ -48,6 +54,10 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: LoginViewDelegate {
+    
+    func fbButtonTapped() {
+        
+    }
     
     func emailButtonTapped() {
         let vc = presentationAssembly.emailViewController().embedInNavigationController()
