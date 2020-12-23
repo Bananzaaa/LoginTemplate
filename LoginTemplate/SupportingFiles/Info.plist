@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>googleClientID</key>
-	<string>$(GOOGLE_CLIENT_ID)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -34,6 +32,16 @@
 				<string>com.googleusercontent.apps.125797404917-qs1937f523b2vp7vr7m8hg5uubb9snte</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.StasAtskiy.LoginTemplate</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>vk7708051</string>
+			</array>
+		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
@@ -58,9 +66,14 @@
 		<string>fb-messenger-share-api</string>
 		<string>fbauth2</string>
 		<string>fbshareextension</string>
+        <string>vk</string>
+        <string>vk-share</string>
+        <string>vkauthorize</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSContactsUsageDescription</key>
+	<string>I need your contacts, mutherfucker!</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -88,7 +101,9 @@
 	<string>$(GITHUB_CLIENT_SECRET)</string>
 	<key>githubRedirectURI</key>
 	<string>$(GITHUB_REDIRECT_URI)</string>
-	<key>NSContactsUsageDescription</key>
-	<string>I need your contacts, mutherfucker!</string>
+	<key>googleClientID</key>
+	<string>$(GOOGLE_CLIENT_ID)</string>
+	<key>vkAppID</key>
+	<string>$(VK_SECRET_KEY)</string>
 </dict>
 </plist>

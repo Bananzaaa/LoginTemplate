@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleSignIn
+import VK_ios_sdk
 
 class LoginViewController: UIViewController {
     
@@ -45,6 +46,7 @@ class LoginViewController: UIViewController {
         
         title = "Choose login method"
         googleSignInSetup()
+        vkSignInSetup()
     }
     
     // MARK: - Helpful
@@ -61,10 +63,40 @@ class LoginViewController: UIViewController {
         // Automatically sign in the user.
         GIDSignIn.sharedInstance()?.restorePreviousSignIn()
     }
+    
+    private func vkSignInSetup() {
+        guard let config = Bundle.parseConfig(), let appID = config.vkAppID else {
+            print(#line, "No config file or clientID")
+            return
+        }
+        let sdkInstance = VKSdk.initialize(withAppId: appID)
+        sdkInstance?.uiDelegate = self
+        sdkInstance?.register(self)
+    }
+    
+    private func wakeUpSession() {
+        let scope = ["email"]
+        VKSdk.wakeUpSession(scope) { (state, error) in
+            if state == .authorized {
+                //autorized
+                print("User authorized")
+                
+            } else if let error = error {
+                print("Error: \(error)")
+            } else {
+                //autorized neaded
+                VKSdk.authorize(scope)
+            }
+        }
+    }
 
 }
 
 extension LoginViewController: LoginViewDelegate {
+    func vkButtonTapped() {
+        wakeUpSession()
+    }
+    
     func emailButtonTapped() {
         let vc = presentationAssembly.emailViewController().embedInNavigationController()
         present(vc, animated: true, completion: nil)
@@ -115,5 +147,30 @@ extension LoginViewController: GIDSignInDelegate {
       // ...
     }
 
+}
+
+extension LoginViewController: VKSdkUIDelegate {
+    func vkSdkShouldPresent(_ controller: UIViewController!) {
+        present(controller, animated: true, completion: nil)
+    }
+    
+    func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {
+        print(#function)
+    }
+}
+
+extension LoginViewController: VKSdkDelegate {
+    func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult) {
+        print(#function)
+        if let token = result.token?.accessToken {
+            print("VK Access token: \(token)")
+        } else {
+            print("No accessToken from VK")
+        }
+    }
+    
+    func vkSdkUserAuthorizationFailed() {
+        print(#function)
+    }
 }
 

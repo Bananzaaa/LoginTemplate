@@ -15,6 +15,7 @@ protocol LoginViewDelegate: class {
     func fbButtonTapped()
     func githubButtonTapped()
     func googleButtonTapped()
+    func vkButtonTapped()
 }
 
 final class LoginView: UIView {
@@ -22,10 +23,9 @@ final class LoginView: UIView {
     // MARK: - UI
     
     private lazy var emailButton: UIButton = {
-        let btn = UIButton.loginButton(title: "Log in with Email",
-                                       color: .green,
-                                       action: #selector(self.actionEmail(_:)))
-        return btn
+        return UIButton.loginButton(title: "Log in with Email",
+                                    color: .green,
+                                    action: #selector(self.actionEmail(_:)))
     }()
     
     private lazy var fbButton: FBLoginButton = {
@@ -35,10 +35,9 @@ final class LoginView: UIView {
     }()
     
     private lazy var githubButton: UIButton = {
-        let btn = UIButton.loginButton(title: "Log in with GitHub",
-                                       color: .darkGray,
-                                       action: #selector(self.actionGitHub(_:)))
-        return btn
+        return UIButton.loginButton(title: "Log in with GitHub",
+                                    color: .darkGray,
+                                    action: #selector(self.actionGitHub(_:)))
     }()
     
     private lazy var googleButton: GIDSignInButton = {
@@ -47,9 +46,21 @@ final class LoginView: UIView {
         btn.colorScheme = .light
         return btn
     }()
+    
+    private lazy var vkButton: UIButton = {
+        return UIButton.loginButton(title: "Log in with VK",
+                                    color: .systemBlue,
+                                    action: #selector(self.actionVK(_:)))
+    }()
         
     private lazy var buttonsStack: UIStackView = {
-        let sv = UIStackView(arrangedSubviews: [emailButton, fbButton, githubButton, googleButton])
+        let sv = UIStackView(arrangedSubviews: [
+            emailButton,
+            fbButton,
+            githubButton,
+            googleButton,
+            vkButton,
+        ])
         sv.alignment = .fill
         sv.distribution = .fill
         sv.axis = .vertical
@@ -92,6 +103,11 @@ final class LoginView: UIView {
     @objc
     private func actionGitHub(_ sender: UIButton) {
         delegate?.githubButtonTapped()
+    }
+    
+    @objc
+    private func actionVK(_ sender: UIButton) {
+        delegate?.vkButtonTapped()
     }
     
 }

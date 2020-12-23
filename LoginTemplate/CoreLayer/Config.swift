@@ -18,5 +18,9 @@ struct Config: Decodable {
     // MARK: - Google
     
     var googleClientID: String?
+    
+    // MARK: - VK
+    
+    var vkAppID: String?
 }
 

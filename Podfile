@@ -10,6 +10,7 @@ target 'LoginTemplate' do
   pod 'FBSDKLoginKit'
   pod 'SnapKit', '~> 5.0.0'
   pod 'GoogleSignIn'
+  pod "VK-ios-sdk" 
   
   target 'LoginTemplateTests' do
     inherit! :search_paths

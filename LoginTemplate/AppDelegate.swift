@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 import GoogleSignIn
+import VK_ios_sdk
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -47,13 +48,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("---SignIn using Facebook---")
         }
         
-        if let token = AccessToken.current, !token.isExpired {
-            destVC = rootAssembly.presentationAssembly.destinationViewController()
-        } else {
-            destVC = rootAssembly.presentationAssembly.loginViewController()
-        }
+//        if let token = AccessToken.current, !token.isExpired {
+//            destVC = rootAssembly.presentationAssembly.destinationViewController()
+//        } else {
+//            destVC = rootAssembly.presentationAssembly.loginViewController()
+//        }
         
-//        destVC = rootAssembly.presentationAssembly.loginViewController()
+        //for test only
+        destVC = rootAssembly.presentationAssembly.loginViewController()
         
         window?.rootViewController = destVC.embedInNavigationController()
         window?.makeKeyAndVisible()
@@ -64,16 +66,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        if ApplicationDelegate.shared.application(
+        
+        //---Facebook---
+        
+        ApplicationDelegate.shared.application(
             app,
             open: url,
             sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
             annotation: options[UIApplication.OpenURLOptionsKey.annotation]
-        ) {
-            return true
-        } else {
-            return GIDSignIn.sharedInstance().handle(url)
-        }
+        )
+        
+        //---Google---
+        
+        GIDSignIn.sharedInstance().handle(url)
+        
+        //---VK---
+        
+        VKSdk.processOpen(url,
+                          fromApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String)
+    
+        return true
     }
 
 }
