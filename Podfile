@@ -9,6 +9,7 @@ target 'LoginTemplate' do
   pod 'Firebase/Auth'
   pod 'FBSDKLoginKit'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'GoogleSignIn'
   
   target 'LoginTemplateTests' do
     inherit! :search_paths

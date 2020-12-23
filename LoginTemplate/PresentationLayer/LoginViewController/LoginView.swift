@@ -8,10 +8,12 @@
 import UIKit
 import SnapKit
 import FBSDKLoginKit
+import GoogleSignIn
 
 protocol LoginViewDelegate: class {
     func emailButtonTapped()
     func fbButtonTapped()
+    func githubButtonTapped()
 }
 
 final class LoginView: UIView {
@@ -19,7 +21,7 @@ final class LoginView: UIView {
     // MARK: - UI
     
     private lazy var emailButton: UIButton = {
-        let btn = UIButton.loginButton(title: "Email",
+        let btn = UIButton.loginButton(title: "Log in with Email",
                                        color: .green,
                                        action: #selector(self.actionEmail(_:)))
         return btn
@@ -30,9 +32,23 @@ final class LoginView: UIView {
         btn.permissions = ["public_profile", "email"]
         return btn
     }()
+    
+    private lazy var githubButton: UIButton = {
+        let btn = UIButton.loginButton(title: "Log in with GitHub",
+                                       color: .darkGray,
+                                       action: #selector(self.actionGitHub(_:)))
+        return btn
+    }()
+    
+    private lazy var googleButton: GIDSignInButton = {
+        let btn = GIDSignInButton()
+        btn.style = .standard
+        btn.colorScheme = .light
+        return btn
+    }()
         
     private lazy var buttonsStack: UIStackView = {
-        let sv = UIStackView(arrangedSubviews: [emailButton, fbButton])
+        let sv = UIStackView(arrangedSubviews: [emailButton, fbButton, githubButton, googleButton])
         sv.alignment = .fill
         sv.distribution = .fill
         sv.axis = .vertical
@@ -70,6 +86,11 @@ final class LoginView: UIView {
     @objc
     private func actionFb(_ sender: UIButton) {
         delegate?.fbButtonTapped()
+    }
+    
+    @objc
+    private func actionGitHub(_ sender: UIButton) {
+        delegate?.githubButtonTapped()
     }
     
 }

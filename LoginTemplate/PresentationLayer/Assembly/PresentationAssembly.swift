@@ -11,6 +11,7 @@ protocol IPresentationAssembly {
     func loginViewController() -> LoginViewController
     func emailViewController() -> EmailViewController
     func destinationViewController() -> DestinationViewController
+    func authWebViewController() -> AuthWebViewController
 }
 
 final class PresentationAssembly: IPresentationAssembly {
@@ -40,5 +41,11 @@ final class PresentationAssembly: IPresentationAssembly {
     
     func destinationViewController() -> DestinationViewController {
         return DestinationViewController()
+    }
+    
+    // MARK: - Auth
+    
+    func authWebViewController() -> AuthWebViewController {
+        return AuthWebViewController(requestService: serviceAssembly.requestService)
     }
 }

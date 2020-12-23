@@ -26,11 +26,27 @@
 		79125DED258E23BE00D690A2 /* LoginTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125DEC258E23BE00D690A2 /* LoginTemplateTests.swift */; };
 		79125E3C258F521A00D690A2 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E3B258F521A00D690A2 /* DestinationViewController.swift */; };
 		79125E43258F523300D690A2 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E42258F523300D690A2 /* DestinationView.swift */; };
+		79125E50258F7E2900D690A2 /* RequestSenderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E4E258F7E2900D690A2 /* RequestSenderError.swift */; };
+		79125E51258F7E2900D690A2 /* RequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E4F258F7E2900D690A2 /* RequestSender.swift */; };
+		79125E5C258F7E4700D690A2 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E59258F7E4700D690A2 /* IRequest.swift */; };
+		79125E67258F7E6300D690A2 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E64258F7E6300D690A2 /* Parser.swift */; };
+		79125E6F258F7EA300D690A2 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E6D258F7EA300D690A2 /* HTTPClient.swift */; };
+		79125E70258F7EA300D690A2 /* IHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E6E258F7EA300D690A2 /* IHTTPClient.swift */; };
+		79125E74258F7ED700D690A2 /* IDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E73258F7ED700D690A2 /* IDispatchQueue.swift */; };
+		79125E78258F7F3A00D690A2 /* RequestsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E77258F7F3A00D690A2 /* RequestsFactory.swift */; };
+		79125E7C258F7FC000D690A2 /* GitHubAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E7B258F7FC000D690A2 /* GitHubAuthRequest.swift */; };
+		79125E82258F80E000D690A2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E81258F80E000D690A2 /* Config.swift */; };
+		79125E8E258F8AB300D690A2 /* AuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E8D258F8AB300D690A2 /* AuthWebViewController.swift */; };
+		79125E94258F8FF100D690A2 /* GitHubAccessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E93258F8FF100D690A2 /* GitHubAccessRequest.swift */; };
+		79125E9F258FB36700D690A2 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125E9E258FB36700D690A2 /* RequestService.swift */; };
+		79125EA5258FC56300D690A2 /* GitHubAccessTokenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125EA4258FC56300D690A2 /* GitHubAccessTokenParser.swift */; };
+		79125EA92590DD6D00D690A2 /* GitHubFetchProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125EA82590DD6D00D690A2 /* GitHubFetchProfileRequest.swift */; };
+		79125EAD2590E1AB00D690A2 /* GitHubUserProfileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125EAC2590E1AB00D690A2 /* GitHubUserProfileParser.swift */; };
+		79125EB32592117700D690A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79125EB22592117700D690A2 /* GoogleService-Info.plist */; };
 		799FA0502588A74C00E2B235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA04F2588A74C00E2B235 /* AppDelegate.swift */; };
 		799FA0542588A74C00E2B235 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799FA0532588A74C00E2B235 /* LoginViewController.swift */; };
 		799FA0592588A74F00E2B235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799FA0582588A74F00E2B235 /* Assets.xcassets */; };
 		799FA05C2588A74F00E2B235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799FA05A2588A74F00E2B235 /* LaunchScreen.storyboard */; };
-		799FA0652588A7BF00E2B235 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 799FA0642588A7BF00E2B235 /* GoogleService-Info.plist */; };
 		CE834417AE5112ED15326650 /* Pods_LoginTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8167251599DEADD48C91EEF9 /* Pods_LoginTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,13 +85,29 @@
 		79125E36258F4AF900D690A2 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		79125E3B258F521A00D690A2 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		79125E42258F523300D690A2 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		79125E4E258F7E2900D690A2 /* RequestSenderError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSenderError.swift; sourceTree = "<group>"; };
+		79125E4F258F7E2900D690A2 /* RequestSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSender.swift; sourceTree = "<group>"; };
+		79125E59258F7E4700D690A2 /* IRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		79125E64258F7E6300D690A2 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		79125E6D258F7EA300D690A2 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		79125E6E258F7EA300D690A2 /* IHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTTPClient.swift; sourceTree = "<group>"; };
+		79125E73258F7ED700D690A2 /* IDispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDispatchQueue.swift; sourceTree = "<group>"; };
+		79125E77258F7F3A00D690A2 /* RequestsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsFactory.swift; sourceTree = "<group>"; };
+		79125E7B258F7FC000D690A2 /* GitHubAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAuthRequest.swift; sourceTree = "<group>"; };
+		79125E81258F80E000D690A2 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		79125E8D258F8AB300D690A2 /* AuthWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWebViewController.swift; sourceTree = "<group>"; };
+		79125E93258F8FF100D690A2 /* GitHubAccessRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAccessRequest.swift; sourceTree = "<group>"; };
+		79125E9E258FB36700D690A2 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		79125EA4258FC56300D690A2 /* GitHubAccessTokenParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAccessTokenParser.swift; sourceTree = "<group>"; };
+		79125EA82590DD6D00D690A2 /* GitHubFetchProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFetchProfileRequest.swift; sourceTree = "<group>"; };
+		79125EAC2590E1AB00D690A2 /* GitHubUserProfileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserProfileParser.swift; sourceTree = "<group>"; };
+		79125EB22592117700D690A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		799FA04C2588A74C00E2B235 /* LoginTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799FA04F2588A74C00E2B235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		799FA0532588A74C00E2B235 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		799FA0582588A74F00E2B235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799FA05B2588A74F00E2B235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		799FA05D2588A74F00E2B235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		799FA0642588A7BF00E2B235 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8167251599DEADD48C91EEF9 /* Pods_LoginTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FD11B306D8E5A42FE1D543 /* Pods-LoginTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplateTests.debug.xcconfig"; path = "Target Support Files/Pods-LoginTemplateTests/Pods-LoginTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC6CC9A5FE647224AAC9191D /* Pods_LoginTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,9 +148,16 @@
 		79125D772588EF7D00D690A2 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
-				79125D9B2588F51700D690A2 /* CoreAssembly.swift */,
-				79125D6E2588D30F00D690A2 /* AuthManager.swift */,
-				79125D742588EAF600D690A2 /* AppSettingsManager.swift */,
+				79125E46258F7DB100D690A2 /* Assembly */,
+				79125E6C258F7EA300D690A2 /* HTTPClient */,
+				79125E61258F7E6300D690A2 /* Parser */,
+				79125E56258F7E4700D690A2 /* Requests */,
+				79125E4D258F7E2900D690A2 /* RequestSender */,
+				79125E4B258F7DD300D690A2 /* AuthManager */,
+				79125E4C258F7DDC00D690A2 /* AppSettingsManager */,
+				79125E77258F7F3A00D690A2 /* RequestsFactory.swift */,
+				79125E73258F7ED700D690A2 /* IDispatchQueue.swift */,
+				79125E81258F80E000D690A2 /* Config.swift */,
 			);
 			path = CoreLayer;
 			sourceTree = "<group>";
@@ -126,7 +165,7 @@
 		79125D782588EF8F00D690A2 /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
-				79125D922588F38700D690A2 /* ServiceAssembly */,
+				79125D922588F38700D690A2 /* Assembly */,
 				79125D8D2588F36000D690A2 /* Services */,
 			);
 			path = ServiceLayer;
@@ -135,7 +174,8 @@
 		79125D7D2588F06500D690A2 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				79125D992588F42700D690A2 /* PresentationAssembly */,
+				79125D992588F42700D690A2 /* Assembly */,
+				79125E9B258FB2A300D690A2 /* AuthWebViewController */,
 				79125D942588F3A900D690A2 /* LoginViewController */,
 				79125DA4258A61CB00D690A2 /* EmailViewController */,
 				79125E3F258F522100D690A2 /* DestinationViewController */,
@@ -149,7 +189,7 @@
 				799FA0582588A74F00E2B235 /* Assets.xcassets */,
 				799FA05A2588A74F00E2B235 /* LaunchScreen.storyboard */,
 				799FA05D2588A74F00E2B235 /* Info.plist */,
-				799FA0642588A7BF00E2B235 /* GoogleService-Info.plist */,
+				79125EB22592117700D690A2 /* GoogleService-Info.plist */,
 				79125D622588CA9100D690A2 /* LoginTemplate.entitlements */,
 			);
 			path = SupportingFiles;
@@ -160,16 +200,17 @@
 			children = (
 				79125D6A2588D2B400D690A2 /* LoginTypes.swift */,
 				79125D642588CC2700D690A2 /* AuthService.swift */,
+				79125E9E258FB36700D690A2 /* RequestService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		79125D922588F38700D690A2 /* ServiceAssembly */ = {
+		79125D922588F38700D690A2 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
 				79125D8E2588F37E00D690A2 /* ServiceAssembly.swift */,
 			);
-			path = ServiceAssembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		79125D942588F3A900D690A2 /* LoginViewController */ = {
@@ -181,12 +222,12 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
-		79125D992588F42700D690A2 /* PresentationAssembly */ = {
+		79125D992588F42700D690A2 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
 				79125D962588F3C700D690A2 /* PresentationAssembly.swift */,
 			);
-			path = PresentationAssembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		79125DA4258A61CB00D690A2 /* EmailViewController */ = {
@@ -217,6 +258,77 @@
 				79125E42258F523300D690A2 /* DestinationView.swift */,
 			);
 			path = DestinationViewController;
+			sourceTree = "<group>";
+		};
+		79125E46258F7DB100D690A2 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				79125D9B2588F51700D690A2 /* CoreAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		79125E4B258F7DD300D690A2 /* AuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				79125D6E2588D30F00D690A2 /* AuthManager.swift */,
+			);
+			path = AuthManager;
+			sourceTree = "<group>";
+		};
+		79125E4C258F7DDC00D690A2 /* AppSettingsManager */ = {
+			isa = PBXGroup;
+			children = (
+				79125D742588EAF600D690A2 /* AppSettingsManager.swift */,
+			);
+			path = AppSettingsManager;
+			sourceTree = "<group>";
+		};
+		79125E4D258F7E2900D690A2 /* RequestSender */ = {
+			isa = PBXGroup;
+			children = (
+				79125E4E258F7E2900D690A2 /* RequestSenderError.swift */,
+				79125E4F258F7E2900D690A2 /* RequestSender.swift */,
+			);
+			path = RequestSender;
+			sourceTree = "<group>";
+		};
+		79125E56258F7E4700D690A2 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				79125E59258F7E4700D690A2 /* IRequest.swift */,
+				79125E7B258F7FC000D690A2 /* GitHubAuthRequest.swift */,
+				79125E93258F8FF100D690A2 /* GitHubAccessRequest.swift */,
+				79125EA82590DD6D00D690A2 /* GitHubFetchProfileRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		79125E61258F7E6300D690A2 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				79125E64258F7E6300D690A2 /* Parser.swift */,
+				79125EA4258FC56300D690A2 /* GitHubAccessTokenParser.swift */,
+				79125EAC2590E1AB00D690A2 /* GitHubUserProfileParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		79125E6C258F7EA300D690A2 /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				79125E6D258F7EA300D690A2 /* HTTPClient.swift */,
+				79125E6E258F7EA300D690A2 /* IHTTPClient.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		79125E9B258FB2A300D690A2 /* AuthWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79125E8D258F8AB300D690A2 /* AuthWebViewController.swift */,
+			);
+			path = AuthWebViewController;
 			sourceTree = "<group>";
 		};
 		799FA0432588A74C00E2B235 = {
@@ -294,6 +406,7 @@
 				799FA0492588A74C00E2B235 /* Frameworks */,
 				799FA04A2588A74C00E2B235 /* Resources */,
 				9B0ECCC785F2D3ECF8AE9FEB /* [CP] Embed Pods Frameworks */,
+				F49D9FBFC38F6830494EE4CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,8 +467,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79125DDD258E00A400D690A2 /* EmailView.xib in Resources */,
+				79125EB32592117700D690A2 /* GoogleService-Info.plist in Resources */,
 				799FA05C2588A74F00E2B235 /* LaunchScreen.storyboard in Resources */,
-				799FA0652588A7BF00E2B235 /* GoogleService-Info.plist in Resources */,
 				799FA0592588A74F00E2B235 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +537,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F49D9FBFC38F6830494EE4CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginTemplate/Pods-LoginTemplate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginTemplate/Pods-LoginTemplate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginTemplate/Pods-LoginTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -441,21 +571,37 @@
 			files = (
 				79125D652588CC2700D690A2 /* AuthService.swift in Sources */,
 				79125D852588F14400D690A2 /* LoginView.swift in Sources */,
+				79125EA92590DD6D00D690A2 /* GitHubFetchProfileRequest.swift in Sources */,
+				79125E8E258F8AB300D690A2 /* AuthWebViewController.swift in Sources */,
 				799FA0542588A74C00E2B235 /* LoginViewController.swift in Sources */,
 				79125DE4258E10B900D690A2 /* EmailViewModel.swift in Sources */,
 				79125DAA258A640800D690A2 /* EmailView.swift in Sources */,
 				79125D972588F3C700D690A2 /* PresentationAssembly.swift in Sources */,
 				79125D752588EAF600D690A2 /* AppSettingsManager.swift in Sources */,
+				79125E94258F8FF100D690A2 /* GitHubAccessRequest.swift in Sources */,
 				79125D8B2588F35700D690A2 /* RootAssembly.swift in Sources */,
 				79125DA1258A61C300D690A2 /* EmailViewController.swift in Sources */,
+				79125E5C258F7E4700D690A2 /* IRequest.swift in Sources */,
 				79125E43258F523300D690A2 /* DestinationView.swift in Sources */,
+				79125EAD2590E1AB00D690A2 /* GitHubUserProfileParser.swift in Sources */,
+				79125E50258F7E2900D690A2 /* RequestSenderError.swift in Sources */,
 				79125D9C2588F51700D690A2 /* CoreAssembly.swift in Sources */,
+				79125E51258F7E2900D690A2 /* RequestSender.swift in Sources */,
 				79125D8F2588F37E00D690A2 /* ServiceAssembly.swift in Sources */,
 				79125E3C258F521A00D690A2 /* DestinationViewController.swift in Sources */,
 				79125DD7258DF82100D690A2 /* EmailCredentials.swift in Sources */,
+				79125E82258F80E000D690A2 /* Config.swift in Sources */,
 				79125D6B2588D2B400D690A2 /* LoginTypes.swift in Sources */,
+				79125E67258F7E6300D690A2 /* Parser.swift in Sources */,
+				79125E9F258FB36700D690A2 /* RequestService.swift in Sources */,
 				799FA0502588A74C00E2B235 /* AppDelegate.swift in Sources */,
+				79125E74258F7ED700D690A2 /* IDispatchQueue.swift in Sources */,
+				79125E70258F7EA300D690A2 /* IHTTPClient.swift in Sources */,
+				79125E6F258F7EA300D690A2 /* HTTPClient.swift in Sources */,
 				79125D6F2588D30F00D690A2 /* AuthManager.swift in Sources */,
+				79125E78258F7F3A00D690A2 /* RequestsFactory.swift in Sources */,
+				79125EA5258FC56300D690A2 /* GitHubAccessTokenParser.swift in Sources */,
+				79125E7C258F7FC000D690A2 /* GitHubAuthRequest.swift in Sources */,
 				79125D882588F2D100D690A2 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

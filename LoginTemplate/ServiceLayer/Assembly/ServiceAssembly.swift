@@ -9,6 +9,7 @@ import Foundation
 
 protocol IServiceAssembly {
     var authService: IAuthService { get }
+    var requestService: IRequestService { get }
 }
 
 final class ServiceAssembly {
@@ -25,5 +26,8 @@ extension ServiceAssembly: IServiceAssembly {
                            appSettingsManager: coreAssembly.appSettingsManager)
     }
     
-    
+    var requestService: IRequestService {
+        return RequestService(requestFactory: coreAssembly.requestsFactory,
+                              requestSender: coreAssembly.requestSender)
+    }
 }

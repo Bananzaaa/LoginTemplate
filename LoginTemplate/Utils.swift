@@ -44,11 +44,25 @@ extension UIButton {
         btn.setAttributedTitle(attrString, for: .normal)
         btn.backgroundColor = color
         btn.snp.makeConstraints { make in
-            make.width.equalTo(100)
+            make.width.equalTo(150)
             make.height.equalTo(44)
         }
         btn.layer.cornerRadius = 8
         btn.addTarget(nil, action: action, for: .touchUpInside)
         return btn
+    }
+}
+
+extension Bundle {
+    static func parseConfig() -> Config? {
+        guard let url = main.url(forResource: "Info", withExtension: "plist") else {return nil}
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = PropertyListDecoder()
+            return try decoder.decode(Config.self, from: data)
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
     }
 }
