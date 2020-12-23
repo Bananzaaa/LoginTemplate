@@ -14,6 +14,7 @@ protocol LoginViewDelegate: class {
     func emailButtonTapped()
     func fbButtonTapped()
     func githubButtonTapped()
+    func googleButtonTapped()
 }
 
 final class LoginView: UIView {
