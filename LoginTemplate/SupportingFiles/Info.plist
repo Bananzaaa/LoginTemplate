@@ -88,5 +88,7 @@
 	<string>$(GITHUB_CLIENT_SECRET)</string>
 	<key>githubRedirectURI</key>
 	<string>$(GITHUB_REDIRECT_URI)</string>
+	<key>NSContactsUsageDescription</key>
+	<string>I need your contacts, mutherfucker!</string>
 </dict>
 </plist>

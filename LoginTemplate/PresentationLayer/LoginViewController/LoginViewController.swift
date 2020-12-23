@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
         GIDSignIn.sharedInstance()?.presentingViewController = self
         
         // Automatically sign in the user.
-        //GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
     }
 
 }
@@ -97,7 +97,7 @@ extension LoginViewController: GIDSignInDelegate {
             return
         }
         
-        print("Goole auth user: \(user)")
+//        print("Goole auth user: \(user)")
         
         // Perform any operations on signed in user here.
 //        let userId = user.userID                  // For client-side use only!

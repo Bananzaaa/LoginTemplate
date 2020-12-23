@@ -37,15 +37,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var destVC: UIViewController
         
-        //---Check login---
+        //---Check login methods---
         
-//        if let token = AccessToken.current, !token.isExpired {
-//            destVC = rootAssembly.presentationAssembly.destinationViewController()
-//        } else {
-//            destVC = rootAssembly.presentationAssembly.loginViewController()
-//        }
+        if let isSignIn = GIDSignIn.sharedInstance()?.hasPreviousSignIn(), isSignIn {
+            print("---SignIn using Google---")
+        }
         
-        destVC = rootAssembly.presentationAssembly.loginViewController()
+        if let token = AccessToken.current, !token.isExpired {
+            print("---SignIn using Facebook---")
+        }
+        
+        if let token = AccessToken.current, !token.isExpired {
+            destVC = rootAssembly.presentationAssembly.destinationViewController()
+        } else {
+            destVC = rootAssembly.presentationAssembly.loginViewController()
+        }
+        
+//        destVC = rootAssembly.presentationAssembly.loginViewController()
         
         window?.rootViewController = destVC.embedInNavigationController()
         window?.makeKeyAndVisible()
